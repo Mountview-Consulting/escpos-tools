@@ -58,6 +58,14 @@
     color: #fff;
 }
 
+.esc-color1 {
+    color: black;
+}
+
+.esc-color2 {
+    color: red;
+}
+
 .esc-upside-down {
     transform: rotate(180deg);
 }
