@@ -21,6 +21,7 @@ class InlineFormatting
     public $invert;
     public $font;
     public $upsideDown;
+    public $color2;
 
     public function __construct()
     {
@@ -67,6 +68,11 @@ class InlineFormatting
         $this -> upsideDown = $upsideDown;
     }
 
+    public function setColor2($color2)
+    {
+        $this -> color2 = $color2;
+    }
+	
     public static function getDefault()
     {
         return new InlineFormatting();
@@ -82,5 +88,6 @@ class InlineFormatting
         $this -> invert = false;
         $this -> font = 0;
         $this -> upsideDown = false;
+        $this -> color2 = 0;
     }
 }
