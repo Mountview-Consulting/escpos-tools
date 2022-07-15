@@ -150,6 +150,9 @@ function span(InlineFormatting $formatting, $spanContentText = false)
     if ($formatting -> font == 1) {
         $classes[] = "esc-font-b";
     }
+    if ($formatting -> color2 == 1) {
+        $classes[] = "esc-color2"; 
+    }
     if ($formatting -> widthMultiple > 1 || $formatting -> heightMultiple > 1) {
         $classes[] = "esc-text-scaled";
         // Add a single class representing height and width scaling
